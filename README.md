@@ -24,16 +24,15 @@ grades its own work.
 5. The loop repeats until an **all-PASS** verdict is confirmed by an independent
    re-check, or a cap/stall stops it. Then it writes an HTML report.
 
-## Install (local, no publishing)
+## Install
 
+From GitHub:
 ```
-claude --plugin-dir ./crucible          # one session
-# or a local marketplace:
-/plugin marketplace add ./crucible
+/plugin marketplace add P-Khodadust/crucible
 /plugin install crucible@crucible-marketplace
 ```
-Pick up edits with `/reload-plugins`. Validate with
-`claude plugin validate ./crucible --strict`.
+Or run a local clone for one session: `claude --plugin-dir ./crucible`.
+Pick up edits with `/reload-plugins`; validate with `claude plugin validate ./crucible --strict`.
 
 ## Commands
 
