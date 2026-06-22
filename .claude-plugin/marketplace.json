@@ -1,0 +1,12 @@
+{
+  "name": "crucible-marketplace",
+  "owner": { "name": "Pouya" },
+  "description": "Local marketplace for the crucible plugin.",
+  "plugins": [
+    {
+      "name": "crucible",
+      "source": "./",
+      "description": "Autonomous plan→build→judge loop with a separate judge agent."
+    }
+  ]
+}

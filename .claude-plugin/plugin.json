@@ -1,0 +1,10 @@
+{
+  "name": "crucible",
+  "version": "0.2.0",
+  "description": "Autonomous plan→build→judge loop for Claude Code: a planner, a builder, and a separate jury of skeptical judges that proves every acceptance criterion before it ships.",
+  "author": { "name": "Pouya" },
+  "homepage": "https://github.com/P-Khodadust/crucible",
+  "repository": "https://github.com/P-Khodadust/crucible",
+  "license": "MIT",
+  "keywords": ["loop", "agent", "autonomous", "tdd", "judge", "jury", "harness", "playwright", "claude-code"]
+}

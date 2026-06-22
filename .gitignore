@@ -1,0 +1,8 @@
+# Crucible writes its working state into the target project, not this repo —
+# but ignore it here too in case you dogfood the loop inside this folder.
+.loop/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+node_modules/

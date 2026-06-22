@@ -1,0 +1,8 @@
+[
+  {
+    "name": "crucible-regression-watch",
+    "command": "node \"${CLAUDE_PLUGIN_ROOT}/monitors/regression-watch.mjs\"",
+    "description": "Re-runs the recorded acceptance test on each new commit and warns if a previously-green build regresses. Idle until a loop records .loop/baseline.json.",
+    "when": "always"
+  }
+]
