@@ -2,6 +2,7 @@
   "name": "crucible-marketplace",
   "owner": { "name": "Pouya" },
   "description": "Local marketplace for the crucible plugin.",
+  "allowCrossMarketplaceDependenciesOn": ["ponytail"],
   "plugins": [
     {
       "name": "crucible",

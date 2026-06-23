@@ -87,6 +87,11 @@ Pick up edits with `/reload-plugins`; validate with `claude plugin validate ./cr
 
 ## Requirements & notes
 
+- **Ponytail (on by default).** Crucible declares the [ponytail](https://github.com/DietrichGebert/ponytail)
+  plugin as a dependency and preloads its minimal-code skill into the builder, so
+  generated code is YAGNI / reuse-first (never at the cost of validation, security, or
+  accessibility). It auto-installs with crucible when ponytail's marketplace is
+  registered; if not, add it once: `/plugin marketplace add DietrichGebert/ponytail`.
 - **Playwright MCP** (bundled) drives the browser for web verification — needs Node
   18+ and a browser.
 - **Git** enables checkpoints, worktree isolation, and `bestof>1`. Without git the
@@ -110,6 +115,8 @@ Every agent/command adds always-on context. Cleanly removable:
 - **A judge lens** (e.g. security): delete `agents/judge-security.md` and remove it
   from the two spawn lists in `commands/loop.md` and `commands/loop-judge.md`.
 - **A subcommand:** delete its `commands/loop-<name>.md` file.
+- **Ponytail default:** remove the `dependencies` entry in `.claude-plugin/plugin.json`
+  and the `skills:` line in `agents/builder.md`.
 
 The core loop needs `commands/loop.md`, `agents/{planner,builder,judge-correctness,
 judge-foreman}.md`, and `scripts/loopctl.mjs`.
