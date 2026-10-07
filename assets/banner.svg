@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="300" viewBox="0 0 880 300" role="img" aria-label="crucible: plan, build, judge. A jury proves every acceptance criterion before it ships.">
+<foreignObject x="0" y="0" width="880" height="300">
+<div xmlns="http://www.w3.org/1999/xhtml" class="root">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.root { width: 880px; height: 300px; border-radius: 14px; overflow: hidden; background: #0d1117;
+        border: 1px solid #30363d; color: #e6edf3; font: 15px/1.5 Inter, 'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; }
+
+.wrap { display: flex; height: 100%; }
+.left { width: 385px; padding: 34px 0 0 34px;
+         background: radial-gradient(circle at 30% 85%, rgba(249,115,22,.22), transparent 60%); }
+.logo { display: flex; align-items: center; gap: 12px; }
+.pot { width: 46px; height: 40px; position: relative; }
+.pot::before { content: ""; position: absolute; inset: 10px 4px 0; background: #30363d;
+               clip-path: polygon(0 0, 100% 0, 82% 100%, 18% 100%); }
+.pot::after { content: ""; position: absolute; left: 6px; right: 6px; top: 6px; height: 12px; border-radius: 50%;
+              background: radial-gradient(#fde047, #f97316 60%, #dc2626); box-shadow: 0 0 18px #f97316; }
+h1 { font-size: 42px; font-weight: 800; letter-spacing: -1.5px; }
+.tag { color: #8b949e; margin: 10px 0 18px; font-size: 15px; line-height: 1.45; }
+.flow { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; font: 600 12px 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }
+.chip { padding: 3px 7px; border-radius: 6px; background: #161b22; border: 1px solid #30363d; }
+.chip.j { border-color: #f97316; color: #fdba74; }
+.arr { color: #6e7681; }
+.term { flex: 1; margin: 22px 22px 22px 6px; background: #010409; border: 1px solid #30363d; border-radius: 10px;
+         padding: 14px 16px; font: 12px/1.62 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; color: #c9d1d9; overflow: hidden; white-space: nowrap; }
+.p { color: #3fb950; } .d { color: #6e7681; } .o { color: #fdba74; } .g { color: #3fb950; font-weight: 700; }
+.r { color: #ff7b72; } .c { color: #79c0ff; }
+
+</style>
+<div class="wrap">
+<div class="left">
+  <div class="logo"><div class="pot"></div><h1>crucible</h1></div>
+  <div class="tag">The builder never grades its own work.<br/>A jury of judges proves it.</div>
+  <div class="flow"><span class="chip">planner</span><span class="arr">→</span><span class="chip">builder</span><span class="arr">→</span>
+  <span class="chip j">jury ×3</span><span class="arr">→</span><span class="chip">foreman</span><span class="arr">↺</span></div>
+</div>
+<div class="term">
+<div><span class="p">❯</span> /crucible:loop todo app; done = npm test passes <span class="d">max=12</span></div>
+<div class="d">· planner &#160;&#160;&#160;wrote .loop/spec.md (5 criteria)</div>
+<div class="d">· builder &#160;&#160;&#160;step 3/7 · npm test <span class="r">2 failing</span></div>
+<div><span class="o">⚖ jury</span> &#160;&#160;&#160;&#160;&#160;correctness <span class="r">FAIL</span> · ux <span class="g">PASS</span> · security <span class="g">PASS</span></div>
+<div class="d">· foreman &#160;&#160;&#160;critique → builder, approach logged</div>
+<div class="d">· builder &#160;&#160;&#160;step 7/7 · npm test <span class="g">ok</span></div>
+<div><span class="o">⚖ jury</span> &#160;&#160;&#160;&#160;&#160;correctness <span class="g">PASS</span> · ux <span class="g">PASS</span> · security <span class="g">PASS</span></div>
+<div><span class="g">✓ all-PASS</span> re-checked · tagged <span class="c">loop-iter-4</span></div>
+<div class="d">· report &#160;&#160;&#160;&#160;.loop/report.html</div>
+</div>
+</div>
+</div>
+</foreignObject>
+</svg>
